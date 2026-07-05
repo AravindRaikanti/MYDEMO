@@ -27,6 +27,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
  use: {
+   headless: false,
   screenshot: 'on',   // take screenshot only when test fails (recommended for real projects)
   
   // screenshot: 'on'              // take screenshot for every step/test (used for debugging, heavy)

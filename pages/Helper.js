@@ -13,8 +13,9 @@ class Helper {
     async login(name, password) {
        
         await this.page.locator("input[placeholder='Enter Name']").fill(name);
-        await this.page.locator("input[placeholder='Enter EMail']").fill(password);
-       
+       // await this.page.locator("input[placeholder='Enter EMail']").fill(password);
+       await this.page.locator("input[placeholder='Enter Name']").type("Aravind");
+       //await this.page.locator("input").pressSequentially("Aravind");
     }
 
 

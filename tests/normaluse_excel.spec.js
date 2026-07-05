@@ -13,8 +13,9 @@ test('Simple Excel Test', async ({ page }) => {
 
     await expect(page).toHaveTitle('Automation Testing Practice');
 
-    await page.fill("input[placeholder='Enter Name']", user.name);
+   // await page.fill("input[placeholder='Enter Name']", user.name);
     await page.fill("input[placeholder='Enter EMail']", user.password);
+    await page.locator("input[placeholder='Enter Name']").type("Aravind");
 
     ///
 
